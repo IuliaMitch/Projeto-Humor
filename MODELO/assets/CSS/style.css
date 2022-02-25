@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --primary-color: rgb(217, 192, 240);
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+.button {
+    background-color: #555555;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.titulo{
+    min-width: 300px;
+    max-width: 800px;
+    text-align: center;
+    padding: 80px;
+    background-image: url(https://www.enworld.org/ewr-porta/attachments/1-png.138298/);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 50px auto;
+}
+.container {
+    text-align: center;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: 10px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+#img {
+    max-width: 400px;
+}
