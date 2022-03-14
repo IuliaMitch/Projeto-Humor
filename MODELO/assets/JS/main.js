@@ -1,5 +1,5 @@
 let nome = window.prompt('Digite seu Nome');
-let nome2 = nome || 'Iulia'
+let nome2 = nome || 'Usuário'
 let h1 = document.querySelector('.nome');
 let imagem;
 let h2 = document.querySelector('h2');
@@ -8,13 +8,13 @@ const racas = ['Humano', 'Elfo', 'Anão'];
 function changeImage(parametro){
     switch (parametro){
         case 0:
-            imagem = document.getElementById('img').src = `https://i.pinimg.com/474x/21/8c/13/218c138d4b34485a64304239bb919de0.jpg`;
+            imagem = document.getElementById('img').src = `./assets/Imagens/humano.jpg`;
         return imagem
         case 1:
-            imagem = document.getElementById('img').src = `http://pm1.narvii.com/7147/2f4df860f773926acbaa1549ab9fcf8518b85382r1-640-960v2_uhq.jpg`;
+            imagem = document.getElementById('img').src = `./assets/Imagens/elfo.jpg`;
         return imagem 
         case 2:
-            imagem = document.getElementById('img').src = `https://pm1.narvii.com/6597/9e50bd91ce3e0e7e5a13a7f68d312a31b806c529_hq.jpg`;
+            imagem = document.getElementById('img').src = `./assets/Imagens/anao.jpg`;
         return imagem
     }
 }
@@ -30,6 +30,9 @@ document.addEventListener('click', function(e){
         }
          raca.innerHTML = `Raça: ${racas[i]}`
          changeImage(i);
+    }
+    if(el.classList.contains('play')){
+        alert(`Você escolheu a raça ${racas[i]}`);
     }
     console.log(i)
 });
